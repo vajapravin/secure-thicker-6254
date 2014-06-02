@@ -1,93 +1,529 @@
-<!-- Default home page -->
-<link type="text/css" href='http://sailsjs.org/styles/fonts.css' rel='stylesheet'/>
-<style>
-    /* Styles included inline since you'll probably be deleting this page anyway */
-    html,body{text-align:left;font-size:1em}html,body,img,form,textarea,input,fieldset,div,p,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code{margin:0;padding:0}ul,li{list-style:none}img{display:block}a img{border:0}a{text-decoration:none;font-weight:normal;font-family:inherit}*:active,*:focus{outline:0;-moz-outline-style:none}h1,h2,h3,h4,h5,h6{font-weight:normal}div.clear{clear:both}.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}body{font-family:"Open Sans",Arial,sans-serif;font-weight:300;font-size:15px}h1{color:#0c8da0;font-size:2em;font-weight:300}h2{font-size:1.5em;font-weight:300;margin-top:4%}h3{font-size:1.25em;font-weight:300;font-style:italic;margin-bottom:5px}h4{color:#0c8da0;font-weight:300;font-size:1.5em}span{font-weight:700}ul{margin-top:5%;margin-bottom:5%}a{text-decoration:none;color:inherit}p{margin-bottom:7px;font-size:.9em}.container{max-width:997px;margin:0 auto;padding:0 4%}.sprite{font-weight:normal;background:url(http://sailsjs.org/images/newapp.sprite.png) no-repeat}.top-bar{position:relative;padding-top:10px;background-color:#001c20;height:55px}.main{float:left;max-width:610px;height:555px;margin-top:50px}.steps{height:250px}.getting-started p{ margin-bottom: 30px; line-height: 26px; }.getting-started div{float:left;width:540px}.getting-started li{clear:both;height:60px;margin-top:20px;margin-bottom:20px}.getting-started .sprite{margin-left:10px;padding-left:60px;height:42px;width:0}.getting-started .one{background-position:0 0}.getting-started .two{background-position:0 -42px}.getting-started .three{background-position:0 -83px}.delete{margin-top:5%;height:52px;background:#e3f0f1;border:1px solid #118798;color:#118798;clear:both}.delete .sprite{margin-top:10px;margin-bottom:10px;margin-left:9%;padding-left:42px;padding-top:7px;height:25px;background-position:0 -126px}.delete a{color:#0c8da0;font-weight:bold;padding-left:1%}.side-bar{max-width:327px;height:555px;float:left;border-left:1px solid #0c8da0;margin-left:25px;margin-top:50px;padding-left:25px}.side-bar ul{margin-bottom:10%}.side-bar ul li{margin-top:5px;margin-bottom:.25em}.side-bar ul li a{margin-bottom:.25em}.side-bar .sprite{padding-left:25px}.side-bar .single_page{background-position:0 -199px}.side-bar .traditional{background-position:0 -219px}.side-bar .realtime{background-position:0 -179px}.side-bar .api{background-position:0 -158px}.boxy{font-family:Courier,"Courier New",sans-serif;background-color:#e4edec;border:1px solid #d0d6d6;padding-left:5px;padding-right:5px;padding-top:2px;padding-bottom:2px;font-weight:100}.sixteen{margin-right:10px}.nineteen{margin-right:7px}
-        .main { width: 100%; }
-        body { min-width: 925px; }
-</style>
-<!--[if IE 7]>
-    <style>
-    .getting-started li{overflow:visible;clear:both}.delete{width:690px}
-    </style>
-<![endif]-->
+<div id="page">
+    <div id="main">
+        <div id="box-container">
+            <div id="entry-list" class="row">
 
-<div class="top-bar">
-    <div class="container clearfix">
-        <img class="logo" src="http://sailsjs.org/images/sails-logo.jpg" />
-    </div>
-</div>
+            <article class="entry box-item format-standard ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <a href="">
+                            <img src="images/dummy/pic1.jpg" alt="">
+                        </a>
+                    </figure>
 
-<div class="container clearfix">
-    <div class="main">
-        <h1 id="main-title"><%= __('Welcome') %></h1>
-        <h2>Getting started</h2>
-        <p>Don't worry, we've got your back.</p>
-        <div class="steps">
-            <ul class="getting-started">
-                <li>
-                    <div class="sprite one"></div>
-                    <div>
-                        <h3>Get your API going.</h3>
+                    <div class="entry-content">
+                        <h1 class="entry-title"><a href="">Le port de Honfleur, Normandie, France</a></h1>
+                        <time datetime="2012-12-12">December 21st, 2012</time>
+
                         <p>
-                            Run <span class="boxy">sails generate foo</span>.  This will create a model <span class="boxy">Foo</span> and controller <span class="boxy">FooController</span>
+                            Let’s light this fire one more time, Mike, and witness this great nation at its best. The surface is fine and powdery. I can kick it up loosely with my toe. It does adhere in fine layers, like powdered charcoal[...]
                         </p>
                     </div>
-                </li>
-                <li>
-                    <div class="sprite two"></div>
-                    <div>
-                        <h3>
-                            Lift your app.
-                        </h3>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+
+                    <div class="entry-comments">
+                        <ol class="commentlist">
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this ...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is o...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is ou....</p>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <a class="read-all-comments btn" href="">View All Comments</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-video ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <iframe src="http://player.vimeo.com/video/58449984?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </figure>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-standard ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <a href="">
+                            <img src="images/dummy/pic1.jpg" alt="">
+                        </a>
+                    </figure>
+
+                    <div class="entry-content">
+                        <h1 class="entry-title"><a href="">Le port de Honfleur, Normandie, France</a></h1>
+                        <time datetime="2012-12-12">December 21st, 2012</time>
+
                         <p>
-                            Run <span class="boxy">sails lift</span> to start up your app.  If you visit <span class="boxy">http://localhost:1337/foo</span> in your browser, you'll see a socket.io-compatible REST API was generated for your 'Foo' model.
+                            Let’s light this fire one more time, Mike, and witness this great nation at its best. The surface is fine and powdery. I can kick it up loosely with my toe. It does adhere in fine layers, like powdered charcoal[...]
                         </p>
                     </div>
-                </li>
-                <li>
-                    <div class="sprite three"></div>
-                    <div>
-                        <h3>
-                            Dive in and start building.
-                        </h3>
-                        <p>From here, you can modify your models, create custom controller methods as Express middleware, and create custom routes (routes are set up in <span class="boxy">config/routes.js</span>).  Visit <a href="http://sailsjs.org">the Sails website</a> for more information on next steps.</p>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
                     </div>
-                </li>
-            </ul>
+
+                    <div class="entry-comments">
+                        <ol class="commentlist">
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this ...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is o...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is ou....</p>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <a class="read-all-comments btn" href="">View All Comments</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-audio ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <a href="">
+                            <img src="images/dummy/pic10.png" alt="">
+                        </a>
+                    </figure>
+
+                    <div class="audio-wrap with-thumb" data-audio-id="78" data-audio-file="demomp3/danosongs.com-magicghost.mp3">
+                        <div id="jp-78" class="jp-jplayer"></div>
+
+                        <div id="jp-play-78" class="jp-audio">
+                            <div class="jp-type-single">
+                                <div class="jp-gui jp-interface">
+                                    <ul class="jp-controls">
+                                        <li><a href="#" class="jp-back">Back</a></li>
+                                        <li><a href="#" class="jp-play" tabindex="1">Play</a></li>
+                                        <li><a href="#" class="jp-pause" tabindex="1">Pause</a></li>
+                                        <li><a href="#" class="jp-forward">Forward</a></li>
+                                    </ul>
+
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="jp-current-time"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- .audio-wrap -->
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+
+                </div>
+            </article>
+            <article class="entry box-item format-standard ur-three columns">
+                <div class="box-wrap">
+
+                    <div class="quote-text">
+                        <blockquote cite="http://www.brainyquote.com/quotes/authors/a/albert_einstein.html">
+                            <p>It's not that I'm so smart, it's just that I stay with problems longer.</p>
+                            <cite><a href="http://www.brainyquote.com/quotes/authors/a/albert_einstein.html">Albert Einstein</a></cite>
+                        </blockquote>
+                    </div>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-image zoomable ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb zoomable">
+                        <a class="fancybox" href="images/dummy/pic5.jpg">
+                            <img src="images/dummy/pic5.jpg" alt="">
+                        </a>
+
+                        <div class="overlay"></div>
+                    </figure>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-gallery zoomable ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb flexslider zoomable">
+                        <ul class="slides">
+                            <li>
+                                <a data-fancybox-group="p1" class="fancybox" href="images/dummy/pic4.jpg">
+                                    <img src="images/dummy/pic4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a data-fancybox-group="p1" class="fancybox" href="images/dummy/pic2.jpg">
+                                    <img src="images/dummy/pic2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a data-fancybox-group="p1" class="fancybox" href="images/dummy/pic3.jpg">
+                                    <img src="images/dummy/pic3.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="overlay"></div>
+                    </figure>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-standard ur-three columns">
+                <div class="box-wrap">
+
+                    <div class="link-container">
+                        <a href="http://www.cssigniter.com" target="_blank">http://www.cssigniter.com</a>
+                    </div>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-standard ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <a href="">
+                            <img src="images/dummy/pic1.jpg" alt="">
+                        </a>
+                    </figure>
+
+                    <div class="entry-content">
+                        <h1 class="entry-title"><a href="">Le port de Honfleur, Normandie, France</a></h1>
+                        <time datetime="2012-12-12">December 21st, 2012</time>
+
+                        <p>
+                            Let’s light this fire one more time, Mike, and witness this great nation at its best. The surface is fine and powdery. I can kick it up loosely with my toe. It does adhere in fine layers, like powdered charcoal[...]
+                        </p>
+                    </div>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+
+                    <div class="entry-comments">
+                        <ol class="commentlist">
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this ...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is o...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is ou....</p>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <a class="read-all-comments btn" href="">View All Comments</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-audio ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <a href="">
+                            <img src="images/dummy/gal4.png" alt="">
+                        </a>
+                    </figure>
+
+                    <div class="audio-wrap with-thumb" data-audio-id="50" data-audio-file="demomp3/danosongs.com-sunspark.mp3">
+                        <div id="jp-50" class="jp-jplayer"></div>
+
+                        <div id="jp-play-50" class="jp-audio">
+                            <div class="jp-type-single">
+                                <div class="jp-gui jp-interface">
+                                    <ul class="jp-controls">
+                                        <li><a href="#" class="jp-back">Back</a></li>
+                                        <li><a href="#" class="jp-play" tabindex="1">Play</a></li>
+                                        <li><a href="#" class="jp-pause" tabindex="1">Pause</a></li>
+                                        <li><a href="#" class="jp-forward">Forward</a></li>
+                                    </ul>
+
+                                    <div class="jp-progress">
+                                        <div class="jp-seek-bar">
+                                            <div class="jp-play-bar"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="jp-current-time"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- .audio-wrap -->
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+
+                </div>
+            </article>
+            <article class="entry box-item format-standard ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <a href="">
+                            <img src="images/dummy/pic1.jpg" alt="">
+                        </a>
+                    </figure>
+
+                    <div class="entry-content">
+                        <h1 class="entry-title"><a href="">Le port de Honfleur, Normandie, France</a></h1>
+                        <time datetime="2012-12-12">December 21st, 2012</time>
+
+                        <p>
+                            Let’s light this fire one more time, Mike, and witness this great nation at its best. The surface is fine and powdery. I can kick it up loosely with my toe. It does adhere in fine layers, like powdered charcoal[...]
+                        </p>
+                    </div>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+
+                    <div class="entry-comments">
+                        <ol class="commentlist">
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this ...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is o...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is ou....</p>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <a class="read-all-comments btn" href="">View All Comments</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-gallery zoomable ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb flexslider zoomable">
+                        <ul class="slides">
+                            <li>
+                                <a data-fancybox-group="p1" class="fancybox" href="images/dummy/pic4.jpg">
+                                    <img src="images/dummy/pic4.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a data-fancybox-group="p1" class="fancybox" href="images/dummy/pic2.jpg">
+                                    <img src="images/dummy/pic2.jpg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a data-fancybox-group="p1" class="fancybox" href="images/dummy/pic3.jpg">
+                                    <img src="images/dummy/pic3.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="overlay"></div>
+                    </figure>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-image zoomable ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb zoomable">
+                        <a class="fancybox" href="images/dummy/pic5.jpg">
+                            <img src="images/dummy/pic5.jpg" alt="">
+                        </a>
+
+                        <div class="overlay"></div>
+                    </figure>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-video ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <iframe src="http://player.vimeo.com/video/58449984?byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                    </figure>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+                </div>
+            </article>
+            <article class="entry box-item format-standard ur-three columns">
+                <div class="box-wrap">
+                    <figure class="entry-thumb">
+                        <a href="">
+                            <img src="images/dummy/pic1.jpg" alt="">
+                        </a>
+                    </figure>
+
+                    <div class="entry-content">
+                        <h1 class="entry-title"><a href="">Le port de Honfleur, Normandie, France</a></h1>
+                        <time datetime="2012-12-12">December 21st, 2012</time>
+
+                        <p>
+                            Let’s light this fire one more time, Mike, and witness this great nation at its best. The surface is fine and powdery. I can kick it up loosely with my toe. It does adhere in fine layers, like powdered charcoal[...]
+                        </p>
+                    </div>
+
+                    <div class="entry-meta">
+                        <a class="love-btn" href="" title="Click to love this"><span class="love-no">12</span></a>
+                        <a class="comment-no" href=""  title="14 Comments">14</a>
+                        <a class="permalink" href="">Permalink</a>
+                    </div>
+
+                    <div class="entry-comments">
+                        <ol class="commentlist">
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this ...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is o...</p>
+                                </div>
+                            </li>
+
+                            <li class="comment">
+                                <div class="comment-text group">
+                                    <img class="avatar" src="images/dummy/avatar.png" alt="">
+                                        <p><strong>vmasto:</strong> First, I believe that this nation should commit itself to achieving the goal, before this decade is ou....</p>
+                                </div>
+                            </li>
+                        </ol>
+
+                        <a class="read-all-comments btn" href="">View All Comments</a>
+                    </div>
+                </div>
+            </article>
+
+            </div> <!-- .entry-list -->
         </div>
-        <div class="delete">
-            <div class="sprite">You're looking at: <span class="boxy">views/home/index.ejs</span></div>
-        </div>
+        <div id="paging"><a class="nav-prev" href="content1col.html">Next Set of Posts</a></div>
+    </div> <!-- #main -->
+</div> <!-- #page -->
+
+
+<section id="bottom-widget">
+    <div class="row">
+        <aside class="widget widget_ci_twitter_widget group twelve columns">
+            <div class="twitter_update_list">
+                <ul>
+                    <li>
+                        <span>This is the twitter feed!</span>
+                        <a class="twitter-time" href="#">about 12 hours ago</a>
+                    </li>
+
+                    <li>
+                        <span>Great, I will prepare a few things this weekend so we have something to discuss!</span>
+                        <a class="twitter-time" href="#">about 11 hours ago</a>
+                    </li>
+
+                    <li>
+                        <span>thanx, always a work in progress :) btw i'm going to write down a few ideas about the regional meetup!</span>
+                        <a class="twitter-time" href="#">about 5 hours ago</a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
     </div>
-    <div class="side-bar">
-        <h4 id="new">
-            New to Sails?
-        </h4>
-        <ul>
-            <li>
-                <a href="http://sailsjs.org">Visit sailsjs.org</a>
-            </li>
-            <li>
-                <a href="http://sailsjs.org/#!documentation">Documentation</a>
-            </li>
-        </ul>
-        <h4>
-            Next Steps
-        </h4>
-        <ul>
-            <li class="sprite single_page">
-                <a target="_blank" href="http://sailsjs.org">Build a single page app</a>
-            </li>
-            <li class="sprite traditional">
-                <a target="_blank" href="http://sailsjs.org">Build a traditional webapp</a>
-            </li>
-            <li class="sprite realtime">
-                <a target="_blank" href="http://sailsjs.org">Build a realtime app</a>
-            </li>
-            <li class="sprite api">
-                <a target="_blank" href="http://sailsjs.org">Build an API</a>
-            </li>
-        </ul>
-    </div>
-</div>
+</section> <!-- #bottom-widget -->

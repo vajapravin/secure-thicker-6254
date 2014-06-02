@@ -10,7 +10,7 @@
 
     <!-- Viewport mobile tag for sensible mobile support -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
+    	    
     <!--
 
       Stylesheets
@@ -32,65 +32,68 @@
       If necessary, shut down and then lift your app again.
       
     -->
+    <!-- Basic Page Needs
+            ================================================== -->
+    <meta charset="utf-8">
+    <title>PinsController - Homepage</title>
 
-  </head>
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <body>
+    <!-- Mobile Specific Metas ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!-- CSS ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/foundation.css">
+    <link rel="stylesheet" href="/styles/flexslider.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/mediaqueries.css">
+    <link rel="stylesheet" href="/styles/colors/default.css" type="text/css" id="color">  
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+
+    <script src="/js/modernizr.js"></script>
+    
+</head>
+
+<body>
+    
+    <script type="text/javascript" src="shared/header.js"></script>
+
+    <ul id="styler" class="group">
+        <li><a href="colors/default.css" id="color-default">Default</a></li>
+        <li><a href="colors/blue_teal.css" id="color-blue-teal">Green &ndash; Teal</a></li>
+        <li><a href="colors/brown.css" id="color-brown">Brown</a></li>
+        <li><a href="colors/green_orange.css" id="color-green-orange">Green &ndash; Orange</a></li>
+        <li><a href="colors/teal_pink.css" id="color-teal-pink">Teal &ndash; Pink</a></li>
+        <li id="style-toggle"><a href="#">Toggle</a></li>
+    </ul>
+
+    
     <!-- Include the view file for the current controller/route -->
     <%- body %>
+    
+    <script type="text/javascript" src="shared/footer.js"></script>
+       
+    <!-- Javascript
+    ================================================== -->
+    <script src="/js/jquery-1.8.2.min.js"></script>
+    <script src="/js/superfish.js"></script>
+    <script src="/js/jquery.flexslider-min.js"></script>
+    <script src="/js/jquery.formLabels1.0.js"></script>
+    <script src="/js/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="/js/jquery.fitvids.js"></script>
+    <script src="/js/jquery.isotope.min.js"></script>
+    <script src="/js/jquery.ias.js"></script>
+    <script src="/js/jquery.jplayer.js"></script>
+    <script src="/js/scripts.js"></script>
+    <!--[if (gte IE 6)&(lte IE 8)]><script type="text/javascript" src="/js/selectivizr-min.js"></script><![endif]-->
 
-
-    <!--
-
-      Client-side Javascript
-      ========================
-
-      You can import any js files in your `assets` directory as you would 
-      normally: using <script></script> tags.
-
-      Here's an example of importing a few dependencies, in order:
-    -->
-    <!-- Bring in the socket.io client -->
-    <script type="text/javascript" src="/js/socket.io.js"></script>
-    <!-- then beef it up with some convenience logic for talking to Sails.js -->
-    <script type="text/javascript" src="/js/sails.io.js"></script>
-    <!-- listen on socket.io for incoming messages -->
-    <script type="text/javascript" src="/js/app.js"></script>
-
-    <!-- Your scripts here? -->
-    <!-- Your scripts here? -->
-    <!-- Your scripts here? -->
-
-
-    <!--
-
-      Looking for client-side CoffeeScript or TypeScript?
-      ================================================
-
-      CoffeeScript and TypeScript precompilation are not installed by default,
-      but if you'd like to mix those features in, it is straightforward to
-      `npm install` the relevant grunt community modules and modify your Gruntfile
-      to use them.
-
-    -->
-
-
-
-    <!--
-
-      Another way: The Asset Linker
-      ========================
-
-      Sails supports a Grunt-based asset linker, to automatically inject 
-      <link> and <script> tags, as well any client-side templates you're using
-      into your HTML layouts and views, respecting dependencies.
-
-      You created this Sails app with the asset linker disabled.
-      If you change your mind, check out the docs on the subject:
-      http://sailsjs.org/#!documentation/asset-management
-
-    -->
-
-    </body>
+</body>
 </html>
